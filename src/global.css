@@ -1,0 +1,34 @@
+:root {
+  --white: #fff;
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+
+  --green-500: #00875f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*faz com que o padding, margin e border do elemento não aumentem a sua largura e altura e sim espremam o elemento para dentro*/
+}
+
+body {
+  background-color: var(--gray-900);
+  color: var(--gray-300);
+  -webkit-font-smoothing: antialiased; /*aplica nos navegadores que são baseados no webkit uma padronização nas fontes para ficarem mais detalhadas, principalmente quando essas fontes não são padrão do sistema*/
+}
+
+/*especifico a fonte não somente para o body pois por padrão, esses elementos tem a estilização padrão, e não herdam a estilização do body por sí*/
+body,
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
