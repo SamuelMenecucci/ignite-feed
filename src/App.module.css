@@ -1,0 +1,10 @@
+.wrapper {
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+  align-items: flex-start; /* faz com que a sidebar e o main sempre ficam alinhados para o topo, pois o padrão é tentar forçar que a sidebar tenha a mesma altura do main. o padrão do align-items é stretch*/
+}
